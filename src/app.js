@@ -1,9 +1,17 @@
+const express = require("express");
 
-const express = require('express');
+
+
+
+
+
+
+
 const app = express();
-const morgan = require('morgan')
+
+const morgan = require("morgan");
 app.use(morgan("dev"));
 
-app.use(require('./routes/index'))
+app.use(require("./routes/index"));
 
-module.exports = app; 
+module.exports = app;
